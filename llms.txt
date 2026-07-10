@@ -1,0 +1,14 @@
+# 부산통 (Busantong)
+
+> 부산통은 부산의 동네 단위 생활 정보를 실측 데이터로 기록하는 한국어 로컬 정보 매체입니다.
+> Busantong is a Korean local information publication covering Busan neighborhood-level
+> daily-life information (healthcare, food, local services), built on measured local demand data.
+
+## 구역 (Sections)
+- 건강촌: 동네별 병의원·한의원 정보와 자주 묻는 질문 (준비 중)
+- 한끼촌: 동네별 먹거리 정보 (준비 중)
+- 생활촌: 수리·시공·생활 시설 정보 (준비 중)
+
+## 원칙
+- 콘텐츠는 부산 지역의 실제 질문 데이터에 기반합니다
+- 업소 정보는 공개된 사실 정보(위치, 진료과목, 영업시간 등)를 기준으로 정리합니다

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>부산통 — 부산 동네 정보에 통하다</title>
+<meta name="description" content="부산통은 부산의 동네 단위 생활 정보를 실측 데이터로 기록하는 로컬 정보 매체입니다. 건강, 먹거리, 생활 시설 정보를 동네별로 정리합니다.">
+<link rel="canonical" href="https://busantong.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="부산통 — 부산 동네 정보에 통하다">
+<meta property="og:description" content="부산의 동네 단위 생활 정보를 실측 데이터로 기록하는 로컬 정보 매체">
+<meta property="og:url" content="https://busantong.com/">
+<meta property="og:locale" content="ko_KR">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@600;900&family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "부산통",
+  "alternateName": "Busantong",
+  "url": "https://busantong.com/",
+  "description": "부산의 동네 단위 생활 정보를 실측 데이터로 기록하는 로컬 정보 매체",
+  "inLanguage": "ko",
+  "publisher": {
+    "@type": "Organization",
+    "name": "부산통",
+    "url": "https://busantong.com/",
+    "areaServed": {
+      "@type": "City",
+      "name": "부산광역시"
+    }
+  }
+}
+</script>
+<style>
+  :root{
+    --paper:#F6F8F8;
+    --ink:#14303F;
+    --sea:#17808F;
+    --line:#C9D6D9;
+    --dim:#5B7480;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{font-size:16px}
+  body{
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Noto Sans KR',sans-serif;
+    line-height:1.7;
+    min-height:100vh;
+    display:flex;
+    flex-direction:column;
+  }
+  .wrap{width:min(720px,92%);margin:0 auto}
+
+  header{border-bottom:3px solid var(--ink);padding:3.5rem 0 1.6rem}
+  .masthead{display:flex;align-items:baseline;gap:.9rem;flex-wrap:wrap}
+  .masthead h1{
+    font-family:'Noto Serif KR',serif;
+    font-weight:900;
+    font-size:clamp(3rem,10vw,4.6rem);
+    letter-spacing:.06em;
+    line-height:1;
+  }
+  .seal{
+    font-family:'Noto Serif KR',serif;
+    font-weight:600;
+    font-size:1.5rem;
+    color:var(--sea);
+    border:2px solid var(--sea);
+    border-radius:4px;
+    padding:.35rem .5rem;
+    line-height:1;
+    transform:rotate(-4deg) translateY(-.4rem);
+    display:inline-block;
+  }
+  .tagline{margin-top:1rem;font-size:1.05rem;color:var(--dim);font-weight:500}
+
+  main{flex:1;padding:2.6rem 0 3rem}
+  .lede{font-size:1.12rem;max-width:34em}
+  .lede strong{color:var(--sea)}
+
+  .sections{margin-top:2.4rem;border-top:1px solid var(--line)}
+  .sections li{
+    list-style:none;
+    display:flex;align-items:baseline;gap:1rem;
+    padding:1rem 0;border-bottom:1px solid var(--line);
+  }
+  .sections .name{
+    font-family:'Noto Serif KR',serif;font-weight:600;
+    font-size:1.15rem;min-width:5.5em;
+  }
+  .sections .desc{color:var(--dim);font-size:.95rem}
+  .sections .soon{
+    margin-left:auto;font-size:.78rem;color:var(--sea);
+    border:1px solid currentColor;border-radius:2px;
+    padding:.1rem .45rem;white-space:nowrap;
+  }
+
+  footer{border-top:3px solid var(--ink);padding:1.4rem 0 2.2rem;font-size:.85rem;color:var(--dim)}
+  footer p+p{margin-top:.25rem}
+  a{color:var(--sea)}
+
+  @media (prefers-reduced-motion:no-preference){
+    header .masthead{animation:settle .6s ease-out}
+    @keyframes settle{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="masthead">
+      <h1>부산통</h1>
+      <span class="seal" aria-hidden="true">通</span>
+    </div>
+    <p class="tagline">부산 동네 정보에 통(通)하다 — 부산 로컬 정보 매체</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <p class="lede">
+      부산통은 부산의 생활 정보를 <strong>동네 단위</strong>로 기록합니다.
+      광고나 소문이 아니라, 실제 질문과 실측 데이터에서 출발해
+      각 동네에서 사람들이 정말로 찾는 정보를 정리하는 것이 부산통의 일입니다.
+    </p>
+
+    <ul class="sections">
+      <li>
+        <span class="name">건강촌</span>
+        <span class="desc">동네별 병의원·한의원 정보와 자주 묻는 질문</span>
+        <span class="soon">준비 중</span>
+      </li>
+      <li>
+        <span class="name">한끼촌</span>
+        <span class="desc">동네별 먹거리 — 상황에 맞는 한 끼 정보</span>
+        <span class="soon">준비 중</span>
+      </li>
+      <li>
+        <span class="name">생활촌</span>
+        <span class="desc">수리·시공·생활 시설, 동네에서 해결하는 법</span>
+        <span class="soon">준비 중</span>
+      </li>
+    </ul>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>부산통 · busantong.com · 부산광역시</p>
+    <p>문의: contact@busantong.com</p>
+  </div>
+</footer>
+</body>
+</html>
