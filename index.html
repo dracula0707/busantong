@@ -111,6 +111,34 @@
   }
   .sections .go::after{content:' →'}
 
+  /* 건강촌 하위 페이지 목록 */
+  .sections li.open{display:block;padding-bottom:.5rem}
+  .open .head{display:flex;align-items:baseline;gap:1rem}
+  .open .head .name{color:var(--sea)}
+  .open .head .count{
+    margin-left:auto;font-size:.78rem;color:var(--dim);white-space:nowrap;
+  }
+  .pages{margin:.7rem 0 .3rem;padding-left:calc(5.5em + 1rem)}
+  .pages li{
+    display:block;padding:0;border:0;
+  }
+  .pages a{
+    display:flex;align-items:baseline;gap:.6rem;
+    padding:.45rem 0;text-decoration:none;color:var(--ink);
+    border-bottom:1px dotted var(--line);
+    transition:opacity .15s;
+  }
+  .pages li:last-child a{border-bottom:0}
+  .pages a:hover{opacity:.6}
+  .pages .t{font-size:.97rem;font-weight:500}
+  .pages .s{font-size:.83rem;color:var(--dim)}
+  .pages .arw{margin-left:auto;color:var(--sea);font-size:.85rem}
+  @media(max-width:560px){
+    .pages{padding-left:0}
+    .pages a{flex-wrap:wrap;gap:.2rem .5rem}
+    .pages .s{width:100%}
+  }
+
   footer{border-top:3px solid var(--ink);padding:1.4rem 0 2.2rem;font-size:.85rem;color:var(--dim)}
   footer p+p{margin-top:.25rem}
   a{color:var(--sea)}
@@ -141,12 +169,28 @@
     </p>
 
     <ul class="sections">
-      <li>
-        <a class="live" href="/health/yeonsan-accident/">
+      <li class="open">
+        <div class="head">
           <span class="name">건강촌</span>
-          <span class="desc">동네별 병의원·한의원 정보와 자주 묻는 질문 — 연산동 교통사고편 공개</span>
-          <span class="go">보러가기</span>
-        </a>
+          <span class="desc">동네별 병의원·한의원 정보와 자주 묻는 질문</span>
+          <span class="count">2편</span>
+        </div>
+        <ul class="pages">
+          <li>
+            <a href="/health/yeonje-hanbang-data/">
+              <span class="t">연제구 한방 의료기관 84곳 진료조건 데이터</span>
+              <span class="s">첩약 51곳 · 방문진료 34곳 · 입원 4곳</span>
+              <span class="arw">→</span>
+            </a>
+          </li>
+          <li>
+            <a href="/health/yeonsan-accident/">
+              <span class="t">연산동 교통사고 한의원·한방병원</span>
+              <span class="s">입원 가능 기관과 자주 묻는 질문</span>
+              <span class="arw">→</span>
+            </a>
+          </li>
+        </ul>
       </li>
       <li>
         <span class="name">한끼촌</span>
